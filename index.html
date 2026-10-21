@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sahil Estates — Luxury Homes in Karachi, Pakistan</title>
+  <meta name="description" content="Sahil Estates is a Karachi-based property studio curating sea-facing penthouses, gated villas and investment plots across Clifton, DHA, Bahria Town and beyond. Explore every home in interactive 3D.">
+  <meta name="theme-color" content="#060b11">
+  <meta property="og:title" content="Sahil Estates — Where Karachi meets the sea">
+  <meta property="og:description" content="A curated collection of Karachi residences, explored in interactive 3D.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060b11'/%3E%3Cpath d='M18 44V30a14 14 0 0 1 28 0v14' fill='none' stroke='%23d5b57c' stroke-width='2.4'/%3E%3Cpath d='M24 44c3-4 5-4 8 0s5 4 8 0' fill='none' stroke='%235ec8bf' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body id="top">
+
+  <!-- Icon library -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18v-7m0 3h18m0 4v-4a3 3 0 0 0-3-3H9v4M3 11V7m3 4V9h2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="9" r="1.6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-2Zm2 0V6.5A2.5 2.5 0 0 1 8.5 4c1.2 0 2 .7 2.3 1.8M6 18l-1 2m13-2 1 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 8V4h4M16 4h4v4m0 8v4h-4M8 20H4v-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 9h6v6H9z" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".5"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm0 0v9m8-4.5-8 4.5m-8-4.5 8 4.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.1 8.2a7 7 0 0 1 11.7-1.4L20 12M4 12l2.2 5.2a7 7 0 0 0 11.7-1.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 4v6h6M4.6 10a8 8 0 1 1 .5 5.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.5 5-2 1.5a13 13 0 0 0 5.5 5.5L16 13l5 1.5v3a2.5 2.5 0 0 1-2.7 2.5C10.2 19.3 4.7 13.8 4 5.7A2.5 2.5 0 0 1 6.5 3Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8.8 7.7c-.3 0-.6.1-.8.4-.4.4-.8 1-.8 1.9 0 1.9 2.8 5 5.7 5.5 1 .1 1.7-.2 2.1-.6.3-.3.6-.8.6-1.2 0-.2 0-.3-.2-.4l-1.6-.8c-.2-.1-.4 0-.5.1l-.6.7c-.1.1-.3.2-.5.1-.7-.3-2-1.1-2.5-2.2-.1-.2 0-.4.1-.5l.5-.6c.1-.1.1-.3.1-.4l-.7-1.6c-.1-.3-.4-.4-.9-.4Z" fill="currentColor"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M5 9v10M5 5.5v.01M10 19V9m0 4c0-2 2-4 4-4s4 1.5 4 4v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.7 4.9 2.4 6.6 7 7-4.6.4-6.3 2.1-7 7-.7-4.9-2.4-6.6-7-7 4.6-.4 6.3-2.1 7-7Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path class="pre-draw" d="M14 48V29a18 18 0 0 1 36 0v19" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path class="pre-wave" d="M20 47c4-5 7-5 11 0s7 5 11 0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <p class="preloader__name">SAHIL <span>ESTATES</span></p>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <p class="preloader__meta"><span>Karachi</span><span>24.8607° N · 67.0011° E</span></p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Sahil Estates home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M9 38V24a15 15 0 0 1 30 0v14" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M13 37c3.5-4.5 6-4.5 9 0s6 4.5 9 0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          <circle cx="24" cy="17" r="1.6" fill="currentColor"/>
+        </svg>
+        <span class="brand__text">SAHIL<small>Estates · Karachi</small></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#residences" data-nav>Residences</a>
+        <a href="#studio" data-nav>3D Studio</a>
+        <a href="#neighbourhoods" data-nav>Neighbourhoods</a>
+        <a href="#market" data-nav>Market</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+922135830000">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>+92 21 3583 0000</span>
+        </a>
+        <a class="btn btn--gold btn--sm header-cta" href="#contact">Book a viewing</a>
+        <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <svg class="icon icon--menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <a href="#residences"><span>01</span>Residences</a>
+      <a href="#studio"><span>02</span>3D Studio</a>
+      <a href="#neighbourhoods"><span>03</span>Neighbourhoods</a>
+      <a href="#market"><span>04</span>Market</a>
+      <a href="#contact"><span>05</span>Contact</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="tel:+922135830000">+92 21 3583 0000</a>
+      <a href="mailto:hello@sahil.estate">hello@sahil.estate</a>
+      <p>9th Floor, Dolmen City, Clifton Block 4, Karachi</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__media">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero__fallback" aria-hidden="true">
+          <div class="fallback__sun"></div>
+          <div class="fallback__skyline"></div>
+          <div class="fallback__sea"></div>
+        </div>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light" data-hero="1">
+            <span class="eyebrow__rule"></span>Karachi · Sindh · Pakistan
+          </p>
+          <h1 class="hero__title" data-hero="2">
+            Where the city<br>meets the <em>sea.</em>
+          </h1>
+          <p class="hero__lede" data-hero="3">
+            A curated collection of homes across Karachi's most storied
+            neighbourhoods — from sea-facing penthouses in Clifton to quiet,
+            tree-lined avenues in DHA.
+          </p>
+          <div class="hero__actions" data-hero="4">
+            <a class="btn btn--gold" href="#residences">
+              Explore residences
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn--line" href="#studio">
+              <svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg>
+              Tour in 3D
+            </a>
+          </div>
+          <div class="hero__coords" data-hero="5">
+            <span class="dot-live"></span>
+            <span>Live from Clifton · sea breeze 18 km/h</span>
+            <span class="coords">24.8607° N / 67.0011° E</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" data-hero="6" aria-label="Featured residence">
+          <div class="hero-card__top">
+            <span class="pill pill--gold">Featured</span>
+            <span class="hero-card__idx">01 / 09</span>
+          </div>
+          <div class="hero-card__art" id="heroCardArt"></div>
+          <p class="hero-card__area" id="heroCardArea">DHA Phase 8 · Karachi</p>
+          <h2 class="hero-card__title" id="heroCardTitle">Khayaban-e-Saadi Villa</h2>
+          <div class="hero-card__meta">
+            <span>5 beds</span><span>8,000 sq ft</span><span>PKR 13.5 cr</span>
+          </div>
+          <a class="hero-card__link" href="#studio" data-featured-link>
+            Open in 3D studio
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </aside>
+      </div>
+
+      <div class="container hero__bottom">
+        <div class="hero-stats" data-hero="7">
+          <div class="hero-stat">
+            <strong data-count="240" data-suffix="+">240+</strong>
+            <span>residences placed</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="14" data-suffix="">14</strong>
+            <span>Karachi neighbourhoods</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="17" data-suffix=" yrs">17 yrs</strong>
+            <span>on this coast</span>
+          </div>
+        </div>
+        <div class="hero__tools" data-hero="8">
+          <button class="sky-toggle" id="skyToggle" type="button" aria-pressed="false" aria-label="Switch between golden hour and daylight">
+            <span class="sky-toggle__icon"><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg></span>
+            <span class="sky-toggle__label">Golden hour</span>
+            <span class="sky-toggle__switch" aria-hidden="true"><i></i></span>
+          </button>
+          <a class="scroll-cue" href="#residences" aria-label="Scroll to residences">
+            <span>Scroll to explore</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <p class="hero__side-note" aria-hidden="true">Move your cursor — the skyline follows</p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Sea-view penthouses</span><i></i>
+        <span>Gated DHA villas</span><i></i>
+        <span>Investment plots</span><i></i>
+        <span>Bahria Town residences</span><i></i>
+        <span>Clifton &amp; PECHS apartments</span><i></i>
+        <span>Private viewings</span><i></i>
+        <span>Sea-view penthouses</span><i></i>
+        <span>Gated DHA villas</span><i></i>
+        <span>Investment plots</span><i></i>
+        <span>Bahria Town residences</span><i></i>
+        <span>Clifton &amp; PECHS apartments</span><i></i>
+        <span>Private viewings</span><i></i>
+      </div>
+    </div>
+
+    <!-- RESIDENCES -->
+    <section class="section" id="residences">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">01</span> The collection</p>
+            <h2 class="display">Homes with<br><em>a horizon.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Nine residences, each visited, measured and vetted by our Karachi
+              team. Filter by the way you want to live — then step inside in 3D.</p>
+            <span class="section-head__note">Updated October 2026</span>
+          </div>
+        </header>
+
+        <div class="filter-bar" data-reveal>
+          <div class="chips" role="group" aria-label="Filter by property type">
+            <button class="chip is-active" type="button" data-type="all" aria-pressed="true">All homes</button>
+            <button class="chip" type="button" data-type="villa" aria-pressed="false">Villas</button>
+            <button class="chip" type="button" data-type="apartment" aria-pressed="false">Apartments</button>
+            <button class="chip" type="button" data-type="penthouse" aria-pressed="false">Penthouses</button>
+            <button class="chip" type="button" data-type="plot" aria-pressed="false">Plots</button>
+          </div>
+          <div class="filter-selects">
+            <label class="select-wrap">
+              <span>Area</span>
+              <select id="areaFilter">
+                <option value="all">All Karachi</option>
+                <option value="Clifton">Clifton</option>
+                <option value="DHA">DHA</option>
+                <option value="Bahria">Bahria Town</option>
+                <option value="Gulshan">Gulshan-e-Iqbal</option>
+                <option value="PECHS">PECHS</option>
+                <option value="Scheme 33">Scheme 33</option>
+              </select>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </label>
+            <label class="select-wrap">
+              <span>Sort</span>
+              <select id="sortFilter">
+                <option value="featured">Featured first</option>
+                <option value="price-asc">Price · low to high</option>
+                <option value="price-desc">Price · high to low</option>
+                <option value="size-desc">Largest first</option>
+              </select>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </label>
+          </div>
+        </div>
+
+        <div class="results-line">
+          <p><span id="resultCount">9</span> residences in <span id="resultArea">Karachi</span></p>
+          <button class="text-btn" id="resetFilters" type="button" hidden>Clear filters</button>
+        </div>
+
+        <div class="property-grid" id="propertyGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          <h3>No homes match this search</h3>
+          <p>Try a broader area, or let us source something off-market for you.</p>
+          <button class="btn btn--line" type="button" id="emptyReset">Reset the collection</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D STUDIO -->
+    <section class="section section--dark studio-section" id="studio">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">02</span> Interactive 3D</p>
+            <h2 class="display">Step inside<br><em>before you step in.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Every residence has been modelled in three dimensions. Orbit the
+              architecture, study the terraces, and get a feel for the light
+              before you book a visit.</p>
+            <span class="section-head__note">Rendered live in your browser</span>
+          </div>
+        </header>
+
+        <div class="studio-shell" data-reveal>
+          <div class="studio-stage" id="studioStage">
+            <canvas id="studioCanvas" aria-label="Interactive 3D model of the selected residence"></canvas>
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div class="stage-top">
+              <span class="live-pill"><i></i> Live 3D</span>
+              <span class="stage-type" id="studioTypeLabel">Garden villa</span>
+            </div>
+            <div class="stage-tools">
+              <button class="stage-tool" id="studioRotate" type="button" aria-pressed="true" aria-label="Toggle auto rotation" title="Auto-rotate">
+                <svg class="icon" aria-hidden="true"><use href="#i-rotate"/></svg>
+              </button>
+              <button class="stage-tool" id="studioReset" type="button" aria-label="Reset camera" title="Reset view">
+                <svg class="icon" aria-hidden="true"><use href="#i-reset"/></svg>
+              </button>
+            </div>
+            <div class="stage-hint" id="stageHint">
+              <span>Drag to orbit</span><i></i><span>Scroll to zoom</span>
+            </div>
+            <div class="model-tabs" id="modelTabs" role="group" aria-label="Choose a 3D model">
+              <button type="button" data-model="villa" aria-pressed="false">Villa</button>
+              <button type="button" data-model="tower" aria-pressed="false">Tower</button>
+              <button type="button" data-model="penthouse" aria-pressed="false">Penthouse</button>
+              <button type="button" data-model="plot" aria-pressed="false">Land</button>
+            </div>
+            <div class="stage-fallback" id="stageFallback" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg>
+              <p>Your browser can't display WebGL. The details of this home are on the right.</p>
+            </div>
+          </div>
+
+          <div class="studio-info">
+            <div class="studio-info__head">
+              <span class="studio-area" id="studioArea">DHA Phase 8 · Karachi</span>
+              <span class="studio-price" id="studioPrice">PKR 13.5 crore</span>
+            </div>
+            <h3 class="studio-title" id="studioTitle">Khayaban-e-Saadi Villa</h3>
+            <p class="studio-desc" id="studioDesc"></p>
+            <dl class="studio-specs">
+              <div><dt>Bedrooms</dt><dd id="studioBeds">5</dd></div>
+              <div><dt>Bathrooms</dt><dd id="studioBaths">6</dd></div>
+              <div><dt>Interior</dt><dd id="studioSize">8,000 sq ft</dd></div>
+              <div><dt>Type</dt><dd id="studioKind">Villa</dd></div>
+            </dl>
+            <ul class="feature-list" id="studioFeatures"></ul>
+            <div class="studio-actions">
+              <a class="btn btn--gold" id="studioBook" href="#contact">Book a private viewing</a>
+              <button class="btn btn--line" id="studioNext" type="button">
+                Next home
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </button>
+            </div>
+            <p class="fineprint">Representative model. Fixtures, finishes and views vary — full drawings available on request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEIGHBOURHOODS -->
+    <section class="section" id="neighbourhoods">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">03</span> The city, mapped</p>
+            <h2 class="display">Karachi, street<br><em>by street.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Karachi is not one market — it is fourteen. Sea air, school
+              catchments, commuting arteries and the quiet of a cul-de-sac all
+              move value in different directions.</p>
+            <span class="section-head__note">Median asking price · Oct 2026</span>
+          </div>
+        </header>
+
+        <div class="hood-layout">
+          <div class="map-panel" data-reveal>
+            <svg class="karachi-map" id="karachiMap" viewBox="0 0 620 620" role="img" aria-label="Stylised map of Karachi neighbourhoods">
+              <defs>
+                <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0b2733"/>
+                  <stop offset="1" stop-color="#030c13"/>
+                </linearGradient>
+                <linearGradient id="landGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2b404a"/>
+                  <stop offset="1" stop-color="#182a34"/>
+                </linearGradient>
+                <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0H0v40" fill="none" stroke="rgba(232,220,197,.11)" stroke-width="1"/>
+                </pattern>
+                <filter id="pinGlow" x="-200%" y="-200%" width="500%" height="500%">
+                  <feGaussianBlur stdDeviation="4" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="620" height="620" fill="url(#seaGrad)"/>
+              <rect width="620" height="620" fill="url(#mapGrid)"/>
+              <path class="map-land" d="M0 0h620v438c-45-4-72 18-118 6-40-11-56 14-101 5-35-7-52-41-92-49-43-9-66-35-108-47-50-14-87-28-124-36L0 332Z" fill="url(#landGrad)" stroke="rgba(94,200,191,.45)" stroke-width="1.6"/>
+              <path class="map-creek" d="M476 442c14-16 30-15 44-4 12 10 28 14 44 8 16-6 30-1 36 12" fill="none" stroke="#0d2833" stroke-width="11" stroke-linecap="round"/>
+              <path class="map-river" d="M486 58c-14 52 8 84-8 128-14 40 4 74 1 112-2 38-16 66-20 104" fill="none" stroke="rgba(47,143,138,.4)" stroke-width="2.4" stroke-dasharray="1 6" stroke-linecap="round"/>
+              <path class="map-coastline" d="M0 332c37 8 74 22 124 36 42 12 65 38 108 47 40 8 57 42 92 49 45 9 61-16 101-5 46 12 73-10 118-6" fill="none" stroke="rgba(140,230,220,.62)" stroke-width="2"/>
+              <path class="map-island" d="M66 366c12-9 30-7 38 2 7 8-2 18-16 18-14 0-31-12-22-20Z" fill="#132330" stroke="rgba(94,200,191,.3)" stroke-width="1"/>
+              <text x="300" y="590" class="map-sea">ARABIAN SEA</text>
+              <text x="498" y="104" class="map-river-label" transform="rotate(78 498 104)">MALIR RIVER</text>
+              <text x="532" y="528" class="map-minor">KORANGI CREEK</text>
+              <g class="map-rings" aria-hidden="true">
+                <circle cx="306" cy="330" r="168" fill="none" stroke="rgba(213,181,124,.07)" stroke-width="1"/>
+                <circle cx="306" cy="330" r="248" fill="none" stroke="rgba(213,181,124,.045)" stroke-width="1"/>
+              </g>
+              <g id="mapPins"></g>
+            </svg>
+            <div class="map-card" id="hoodCard">
+              <div class="map-card__top">
+                <span class="pill">Selected area</span>
+                <span class="map-card__growth" id="hoodGrowth">+8.4%</span>
+              </div>
+              <h3 id="hoodName">DHA Phase 8</h3>
+              <p class="map-card__price" id="hoodPrice">PKR 22,500 <span>/ sq ft</span></p>
+              <p class="map-card__blurb" id="hoodBlurb"></p>
+              <div class="map-card__tags" id="hoodTags"></div>
+              <button class="text-btn text-btn--gold" type="button" id="hoodBrowse">
+                Browse homes in this area
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
+            <div class="map-legend">
+              <span><i class="legend-dot"></i> Neighbourhood</span>
+              <span><i class="legend-line"></i> Coastline</span>
+              <span class="map-compass">N <i></i></span>
+            </div>
+          </div>
+
+          <div class="hood-list" id="hoodList" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARKET -->
+    <section class="section section--dark" id="market">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">04</span> The Karachi pulse</p>
+            <h2 class="display">A market<br><em>in motion.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Demand is shifting east along the coast and north along the
+              Super Highway. Here is how the city's median asking prices are
+              moving into 2027.</p>
+            <span class="section-head__note">Sahil research · illustrative</span>
+          </div>
+        </header>
+
+        <div class="market-layout">
+          <div class="market-aside">
+            <div class="market-stat" data-reveal>
+              <span class="market-stat__label">Citywide median</span>
+              <strong>PKR 16,400<small>/ sq ft</small></strong>
+              <span class="delta">+7.8% year on year</span>
+            </div>
+            <div class="market-stat" data-reveal>
+              <span class="market-stat__label">Gross rental yield</span>
+              <strong>5.4%<small>avg.</small></strong>
+              <span class="delta">Clifton &amp; DHA lead</span>
+            </div>
+            <div class="market-stat" data-reveal>
+              <span class="market-stat__label">Days on market</span>
+              <strong>42<small>days</small></strong>
+              <span class="delta delta--down">−9 days since 2025</span>
+            </div>
+            <div class="market-note" data-reveal>
+              <svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <p><strong>Our read:</strong> sea-facing stock under PKR 10 crore
+                remains the most contested segment. Bahria Town is the value
+                play; Scheme 33 is the long hold.</p>
+            </div>
+          </div>
+
+          <div class="chart-panel" data-reveal>
+            <div class="chart-head">
+              <div>
+                <p class="chart-title">Median price per square foot</p>
+                <p class="chart-sub">PKR · selected neighbourhoods · 2026</p>
+              </div>
+              <div class="chart-key"><span class="key-bar"></span> Asking price</div>
+            </div>
+            <div class="chart" id="marketChart"></div>
+            <div class="chart-foot">
+              <span>Source: Sahil Estates Research, compiled from public listings.</span>
+              <span>Prices are indicative and not a valuation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section" aria-label="Client testimonial">
+      <div class="container quote-inner" data-reveal>
+        <svg class="quote-mark" viewBox="0 0 64 48" aria-hidden="true"><path d="M0 48V30C0 13 10 2 28 0v10c-9 2-13 7-13 14h13v24H0Zm36 0V30C36 13 46 2 64 0v10c-9 2-13 7-13 14h13v24H36Z" fill="currentColor"/></svg>
+        <blockquote>
+          <p>“They understood that we didn't just want a house. We wanted the
+            sound of the sea at night, a garden for our daughter, and a kitchen
+            where everyone gathers. Sahil found all three.”</p>
+          <footer>
+            <span class="quote-avatar">AB</span>
+            <span><strong>Ayesha &amp; Bilal</strong><small>Purchased in Clifton Block 5 · 2025</small></span>
+          </footer>
+        </blockquote>
+        <div class="quote-side">
+          <p class="eyebrow eyebrow--light">Client note 041</p>
+          <p class="quote-side__meta">Clifton · 5,200 sq ft · sea-facing</p>
+          <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Start a conversation</p>
+          <h2 class="display">Let's find<br><em>your Karachi.</em></h2>
+          <p class="contact-lede">Tell us how you want to live and we will send a
+            short, considered shortlist — usually within one working day. No
+            mailing lists, no noise.</p>
+
+          <div class="contact-cards">
+            <a class="contact-card" href="https://maps.google.com/?q=Dolmen+City+Clifton+Karachi" target="_blank" rel="noopener">
+              <span class="contact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><small>Studio</small>9th Floor, Dolmen City,<br>Clifton Block 4, Karachi</span>
+              <svg class="icon contact-card__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="contact-card" href="tel:+922135830000">
+              <span class="contact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <span><small>Call or WhatsApp</small>+92 21 3583 0000<br>+92 300 824 5510</span>
+              <svg class="icon contact-card__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <div class="contact-card contact-card--static">
+              <span class="contact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <span><small>Viewings</small>Mon–Sat · 10am – 7pm<br>Sunday by appointment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-head">
+              <h3>Book a private viewing</h3>
+              <p>Or ask us anything — we reply personally.</p>
+            </div>
+            <div class="form-row">
+              <label class="field">
+                <span>Your name</span>
+                <input type="text" name="name" id="formName" placeholder="Ayesha Khan" autocomplete="name" required>
+                <em class="field-error">Please tell us your name.</em>
+              </label>
+              <label class="field">
+                <span>Phone / WhatsApp</span>
+                <input type="tel" name="phone" id="formPhone" placeholder="+92 300 000 0000" autocomplete="tel" required>
+                <em class="field-error">Add a number we can reach you on.</em>
+              </label>
+            </div>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" id="formEmail" placeholder="you@example.com" autocomplete="email" required>
+              <em class="field-error">Please check your email address.</em>
+            </label>
+            <div class="form-row">
+              <label class="field">
+                <span>I'm interested in</span>
+                <select name="interest" id="formInterest">
+                  <option value="A private shortlist">A private shortlist</option>
+                  <option value="Khayaban-e-Saadi Villa">Khayaban-e-Saadi Villa · DHA</option>
+                  <option value="Seaview Sky Penthouse">Seaview Sky Penthouse · Clifton</option>
+                  <option value="Creek Vista Residence">Creek Vista Residence · DHA</option>
+                  <option value="Investment / plots">Investment &amp; plots</option>
+                  <option value="Selling a property">Selling a property</option>
+                </select>
+                <svg class="icon field-select-icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+              </label>
+              <label class="field">
+                <span>Budget</span>
+                <select name="budget" id="formBudget">
+                  <option>Under PKR 2 crore</option>
+                  <option selected>PKR 2 – 5 crore</option>
+                  <option>PKR 5 – 10 crore</option>
+                  <option>PKR 10 crore +</option>
+                  <option>Not sure yet</option>
+                </select>
+                <svg class="icon field-select-icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+              </label>
+            </div>
+            <label class="field">
+              <span>Message <i>(optional)</i></span>
+              <textarea name="message" id="formMessage" rows="3" placeholder="Three bedrooms, sea view if possible, ready to move…"></textarea>
+            </label>
+            <label class="check">
+              <input type="checkbox" id="formConsent" required>
+              <span>I'm happy for Sahil Estates to contact me about this enquiry.</span>
+            </label>
+            <em class="field-error consent-error" id="consentError">Please tick the box so we can reply.</em>
+            <button class="btn btn--gold btn--wide" type="submit" id="formSubmit">
+              Send enquiry
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+            <p class="form-foot">We usually reply within one working day. Your details stay with us.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <span class="success-mark"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3>Shukriya, <span id="successName">friend</span>.</h3>
+            <p>Your note is with our Clifton studio. We'll be in touch shortly — usually the same day.</p>
+            <button class="btn btn--line" type="button" id="formAgain">Send another enquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="Sahil Estates home">
+            <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M9 38V24a15 15 0 0 1 30 0v14" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M13 37c3.5-4.5 6-4.5 9 0s6 4.5 9 0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+            <span class="brand__text">SAHIL<small>Estates · Karachi</small></span>
+          </a>
+          <p>A Karachi property studio, working only on this coast since 2009.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a href="https://wa.me/923008245510" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <div>
+            <h4>Explore</h4>
+            <a href="#residences">Residences</a>
+            <a href="#studio">3D Studio</a>
+            <a href="#neighbourhoods">Neighbourhoods</a>
+            <a href="#market">Market notes</a>
+          </div>
+          <div>
+            <h4>Areas</h4>
+            <button type="button" data-jump-area="Clifton">Clifton</button>
+            <button type="button" data-jump-area="DHA">DHA</button>
+            <button type="button" data-jump-area="Bahria">Bahria Town</button>
+            <button type="button" data-jump-area="Scheme 33">Scheme 33</button>
+          </div>
+          <div>
+            <h4>Studio</h4>
+            <a href="#contact">Book a viewing</a>
+            <a href="#contact">Sell with us</a>
+            <a href="tel:+922135830000">+92 21 3583 0000</a>
+            <a href="mailto:hello@sahil.estate">hello@sahil.estate</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-word" aria-hidden="true">SAHIL</div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Sahil Estates (Pvt) Ltd. Karachi, Pakistan.</p>
+        <p class="footer-disclaimer">Properties are fictional demonstrations. 3D models are representative. Prices in PKR.</p>
+        <p>24.8607° N · 67.0011° E</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+    <span id="toastText">Saved.</span>
+  </div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
